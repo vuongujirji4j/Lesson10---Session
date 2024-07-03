@@ -1,0 +1,67 @@
+﻿@model Pvvk22cntt3lesson10.Models.PvvAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_PvvLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PvvAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvUsersName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvUsersName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvvActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvvActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PvvID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

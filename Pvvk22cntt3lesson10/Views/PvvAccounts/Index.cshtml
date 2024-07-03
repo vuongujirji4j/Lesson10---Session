@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Pvvk22cntt3lesson10.Models.PvvAccount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_PvvLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvUsersName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvvActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvUsersName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvvActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PvvID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PvvID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PvvID })
+        </td>
+    </tr>
+}
+
+</table>

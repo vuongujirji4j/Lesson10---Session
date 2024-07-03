@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PvvK22cntt3lesson10Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PvvAccount">
+    <Key>
+      <PropertyRef Name="PvvID" />
+    </Key>
+    <Property Name="PvvID" Type="int" Nullable="false" />
+    <Property Name="PvvUsersName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PvvPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="PvvFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PvvEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="PvvPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="PvvActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="PvvK22cntt3lesson10ModelStoreContainer">
+    <EntitySet Name="PvvAccount" EntityType="Self.PvvAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
